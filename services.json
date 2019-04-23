@@ -1,0 +1,36 @@
+[
+  {
+    "service": "Brands",
+    "baseUri": "brands",
+    "routes": [
+      {
+        "method": "get",
+        "uri": null,
+        "callbacks": [
+          "list",
+          "second"
+        ]
+      },
+      {
+        "method": "get",
+        "uri": ":name",
+        "callbacks": [
+          "findByName"
+        ]
+      }
+    ]
+  },
+  {
+    "service": "Bikes",
+    "baseUri": "bikes",
+    "routes": [
+      {
+        "method": "get",
+        "uri": null,
+        "callbacks": [
+          "list"
+        ]
+      }
+    ]
+  }
+]
